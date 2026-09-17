@@ -641,3 +641,25 @@ body.modal-open, body.nav-open { overflow: hidden; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; }
 }
+
+/* ===== MOBILE AUDIT FIXES (2026-09-17) ===== */
+@media (max-width: 640px) {
+  .field input, .field select, .field textarea { font-size: 16px; }
+  .link-arrow, .btn-text { padding: 10px 0; }
+  .footer-nav a, .footer-legal a { padding: 6px 0; }
+  .sub-nav a { padding: 8px 0; }
+  .form-actions .btn, .cta-row .btn { min-height: 48px; }
+  .check { padding: 6px 0; }
+  .hero-img-sub figcaption, .service-media figcaption, .m-item.moment figcaption,
+  .wall-item .cat, .m-item .cat, .wall-note .lbl, .flow4-stage, .hero-meta, .brand-sub, .contact-side dt { font-size: 11px; }
+  .acc-tag, .provide .opt { font-size: 10.5px; }
+  .m-item .pl, .wall-item .pl { font-size: 11px; }
+}
+
+/* ===== MOBILE FIX: creator wall captions in 2-col masonry ===== */
+.m-item .cf { font-style: normal; }
+@media (max-width: 640px) {
+  .m-item .cf { display: none; }
+  .m-item.creator figcaption { padding: 22px 12px 12px; gap: 2px; }
+  .m-item .num { font-size: 18px; }
+}
